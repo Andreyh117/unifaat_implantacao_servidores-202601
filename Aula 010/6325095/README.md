@@ -11,4 +11,27 @@ a. Uma subnet pública pode ser acessada de qualquer lugar do mundo, possibilita
 
 # Questão 4: Instâncias EC2 (Prática Teórica)
 a. AMI (Amazon Machine Image);
-b. ssh -i "minha_chave.pem" ec2-user@54.123.45.67
+b. ssh -i "minha_chave.pem" ec2-user@54.123.45.67.
+
+# Questão 5: Comandos AWS CLI (Prática)
+1. aws configure --profile localstack
+![alt text](image.png)
+2. aws --endpoint-url=http://localhost:4566 --profile localstack ec2 describe-instances \
+  --query 'Reservations[].Instances[].[InstanceId, State.Name, InstanceType]' \
+  --output table
+  ![alt text](image-1.png)
+3. aws --endpoint-url=http://localhost:4566 --profile localstack s3 mb s3://meu-bucket-tf10
+![alt text](image-2.png)
+4. aws --endpoint-url=http://localhost:4566 --profile localstack ec2 describe-vpcs
+![alt text](image-3.png)
+
+# Questão 6: Evidências Práticas de Configuração e Criação de Recursos
+## Parte 1: Evidências de Configuração
+1. ![alt text](image-4.png)
+2. ![alt text](image-5.png)
+3. ![alt text](image-6.png) ![alt text](image-7.png)
+4. ![alt text](image-8.png)
+
+## Parte 2: Exercício de Criação de Recursos
+1. ![alt text](image-9.png)
+2. ![alt text](image-10.png) ![alt text](image-11.png)
