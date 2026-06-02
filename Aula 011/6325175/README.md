@@ -42,7 +42,7 @@ Descreva as três etapas fáceis para realizar esta operação, citando o comand
 Criação do Arquivo: Qual comando Linux você usaria para criar um arquivo de teste chamado db_config.confno seu terminal WSL?
 R:touch db_config.conf
 
-Upload (Sintaxe CLI): Qual comando aws s3 você usaria para copiar o arquivo db_config.confpara um bucket chamado config-app-tf11?
+Upload (Sintaxe CLI):Qual comando aws s3 você usaria para copiar o arquivo db_config.confpara um bucket chamado config-app-tf11?
 R:aws s3 cp db_config.conf s3://config-app-tf11/
 
 Verificação: Qual comando aws s3 você usaria para listar o conteúdo do balde e confirmar que o arquivo foi carregado com sucesso?
